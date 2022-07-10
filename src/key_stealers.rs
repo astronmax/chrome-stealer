@@ -1,10 +1,9 @@
 /**
- * Module contains classes that implement key stealing algorithms 
+ * Module contains classes that implement key stealing algorithms
  * (such key we needs to decrypt password).
- * 
+ *
  * Max A. Jurankov (astronmax) 2022
  */
-
 use hmac::Hmac;
 use secret_service::{EncryptionType, SecretService};
 use sha1::Sha1;
